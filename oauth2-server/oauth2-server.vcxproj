@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5E292ED5-D51C-4CF8-9E45-F89AEBFA9A94}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>oauth2server</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\src;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\vcpkg\installed\x64-windows\lib\cpprest_2_10.lib;C:\vcpkg\installed\x64-windows\lib\boost_filesystem-vc140-mt.lib;C:\vcpkg\installed\x64-windows\lib\libssl.lib;C:\vcpkg\installed\x64-windows\lib\libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\src;C:\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\vcpkg\installed\x64-windows\lib\cpprest_2_10.lib;C:\vcpkg\installed\x64-windows\lib\boost_filesystem-vc140-mt.lib;C:\vcpkg\installed\x64-windows\lib\libssl.lib;C:\vcpkg\installed\x64-windows\lib\libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="oauth2-server.cpp" />
+    <ClCompile Include="src\business\message.cpp" />
+    <ClCompile Include="src\cache\shared_map_cache_driver.cpp" />
+    <ClCompile Include="src\cache\web_resource_cache.cpp" />
+    <ClCompile Include="src\crypto\nonce_generator.cpp" />
+    <ClCompile Include="src\defaults.cpp" />
+    <ClCompile Include="src\functions.cpp" />
+    <ClCompile Include="src\http\controller\application_controller.cpp" />
+    <ClCompile Include="src\http\controller\browser_controller.cpp" />
+    <ClCompile Include="src\http\controller\client_controller.cpp" />
+    <ClCompile Include="src\http\controller\message_controller.cpp" />
+    <ClCompile Include="src\http\controller\oauth2_controller.cpp" />
+    <ClCompile Include="src\http\controller\user_controller.cpp" />
+    <ClCompile Include="src\http\http_msg.cpp" />
+    <ClCompile Include="src\http\oauth2\map_oauth2.cpp" />
+    <ClCompile Include="src\http\oauth2\oauth2.cpp" />
+    <ClCompile Include="src\http\parser.cpp" />
+    <ClCompile Include="src\http\session\map_session.cpp" />
+    <ClCompile Include="src\http\session\session.cpp" />
+    <ClCompile Include="src\util\application.cpp" />
+    <ClCompile Include="src\util\file.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="server.conf" />
+    <None Include="src\defaults.dat" />
+    <None Include="src\http\http_constants.dat" />
+    <None Include="src\http\oauth2\oauth2.templates" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\business\message.h" />
+    <ClInclude Include="src\cache\cache_handler.h" />
+    <ClInclude Include="src\cache\shared_map_cache_driver.h" />
+    <ClInclude Include="src\cache\web_resource_cache.h" />
+    <ClInclude Include="src\crypto\cryptograph.h" />
+    <ClInclude Include="src\crypto\nonce_generator.h" />
+    <ClInclude Include="src\crypto\openssl_aes_cryptograph.h" />
+    <ClInclude Include="src\defaults.h" />
+    <ClInclude Include="src\functions.h" />
+    <ClInclude Include="src\http\controller\application_controller.h" />
+    <ClInclude Include="src\http\controller\browser_controller.h" />
+    <ClInclude Include="src\http\controller\client_controller.h" />
+    <ClInclude Include="src\http\controller\controller.h" />
+    <ClInclude Include="src\http\controller\message_controller.h" />
+    <ClInclude Include="src\http\controller\oauth2_controller.h" />
+    <ClInclude Include="src\http\controller\user_controller.h" />
+    <ClInclude Include="src\http\http_msg.h" />
+    <ClInclude Include="src\http\oauth2\map_oauth2.h" />
+    <ClInclude Include="src\http\oauth2\oauth2.h" />
+    <ClInclude Include="src\http\parser.h" />
+    <ClInclude Include="src\http\session\map_session.h" />
+    <ClInclude Include="src\http\session\session.h" />
+    <ClInclude Include="src\util\application.h" />
+    <ClInclude Include="src\util\file.h" />
+    <ClInclude Include="src\util\json.h" />
+    <ClInclude Include="src\util\memory.h" />
+    <ClInclude Include="src\util\mutex.h" />
+    <ClInclude Include="src\util\string.h" />
+    <ClInclude Include="src\util\time.h" />
+    <ClInclude Include="src\util\vector.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,1 +1,0 @@
-{"id" : "math.square","events" : ["calculate"], "extends" : ["math.calculus"]}

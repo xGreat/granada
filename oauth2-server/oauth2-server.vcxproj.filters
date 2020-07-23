@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="www">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{fa7e1dac-7b24-4bea-ad8b-095a65dcf4ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\business">
+      <UniqueIdentifier>{732cca5b-9dca-4f6d-836c-9c31468e9556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crypto">
+      <UniqueIdentifier>{7ba6a8dc-de96-4b0f-b650-b76f9e4866fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\cache">
+      <UniqueIdentifier>{0c9b5c6e-440a-4a49-a271-f37db073aa59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http">
+      <UniqueIdentifier>{832dfab1-748b-4c77-96da-38f1441b6caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{457c2663-ad85-4dd5-99d8-474abfe6d184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http\controller">
+      <UniqueIdentifier>{9ecc7053-6d8f-411a-b97a-21b66d654a0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http\oauth2">
+      <UniqueIdentifier>{1295e090-cb67-4950-8c49-6b9dfee5b1ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http\session">
+      <UniqueIdentifier>{8f100818-db81-4ffb-ac78-a91ae7fc92ec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="server.conf">
+      <Filter>res</Filter>
+    </None>
+    <None Include="src\defaults.dat">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\http\http_constants.dat">
+      <Filter>src\http</Filter>
+    </None>
+    <None Include="src\http\oauth2\oauth2.templates">
+      <Filter>src\http\session</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="oauth2-server.cpp" />
+    <ClCompile Include="src\defaults.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\business\message.cpp">
+      <Filter>src\business</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\nonce_generator.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cache\shared_map_cache_driver.cpp">
+      <Filter>src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cache\web_resource_cache.cpp">
+      <Filter>src\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\http_msg.cpp">
+      <Filter>src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\parser.cpp">
+      <Filter>src\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\application.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\file.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\controller\application_controller.cpp">
+      <Filter>src\http\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\controller\browser_controller.cpp">
+      <Filter>src\http\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\controller\client_controller.cpp">
+      <Filter>src\http\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\controller\message_controller.cpp">
+      <Filter>src\http\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\controller\oauth2_controller.cpp">
+      <Filter>src\http\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\controller\user_controller.cpp">
+      <Filter>src\http\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\oauth2\map_oauth2.cpp">
+      <Filter>src\http\session</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\oauth2\oauth2.cpp">
+      <Filter>src\http\session</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\session\map_session.cpp">
+      <Filter>src\http\oauth2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\session\session.cpp">
+      <Filter>src\http\oauth2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\defaults.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\functions.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\business\message.h">
+      <Filter>src\business</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypto\cryptograph.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypto\nonce_generator.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypto\openssl_aes_cryptograph.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cache\cache_handler.h">
+      <Filter>src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cache\shared_map_cache_driver.h">
+      <Filter>src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cache\web_resource_cache.h">
+      <Filter>src\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\http_msg.h">
+      <Filter>src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\parser.h">
+      <Filter>src\http</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\application.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\file.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\json.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\memory.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\mutex.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\string.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\time.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\vector.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\controller\application_controller.h">
+      <Filter>src\http\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\controller\browser_controller.h">
+      <Filter>src\http\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\controller\client_controller.h">
+      <Filter>src\http\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\controller\controller.h">
+      <Filter>src\http\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\controller\message_controller.h">
+      <Filter>src\http\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\controller\oauth2_controller.h">
+      <Filter>src\http\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\controller\user_controller.h">
+      <Filter>src\http\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\oauth2\map_oauth2.h">
+      <Filter>src\http\session</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\oauth2\oauth2.h">
+      <Filter>src\http\session</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\session\map_session.h">
+      <Filter>src\http\oauth2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\http\session\session.h">
+      <Filter>src\http\oauth2</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
